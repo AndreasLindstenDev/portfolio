@@ -45,7 +45,7 @@ body{
 .menu a .item {
     width: 10em;
     height: 10em;
-    border: 1px solid rgb(180, 31, 31);
+    border: 1px solid rgb(0, 0, 0);
     margin-top: -10em;
 }
 
