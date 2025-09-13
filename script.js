@@ -24,10 +24,10 @@ function addMenuItems(numItems) {
             const newItem_borders = document.createElement('div');
             var diviation = 0;
             if((numItems / 2) % 2 != 0) {
-                diviation = 0 * (360 / numItems) / 2;
+                diviation = (360 / numItems) / 2;
             }
             rotationAngle = (i+1) * 360 / numItems;
-            skewAngle = 0 * ((360 / numItems) - 90);
+            skewAngle = ((360 / numItems) - 90);
             optionAngle = rotationAngle + skewAngle + (90 - skewAngle) / 2;
             newItem_borders.style.transform = `rotate(-${rotationAngle - diviation}deg) 
                                                skew(${skewAngle}deg)`;
