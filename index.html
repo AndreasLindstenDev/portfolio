@@ -7,17 +7,101 @@
     <meta name="Portfolio Andreas Lindsténs" content="Welcome to my portfolio where I showcase my proficiensy in software development through projects and credentials. Please have a look around.">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <!-- Latest compiled and minified CSS according to W3School-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -||- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Varela+Round&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="center">
-            <div class="menu">
+    <div style="height: 100vh; background-color: antiquewhite;">
+        <div class="container" style="background-color: rgb(218, 241, 241);">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="space-grotesk-author-spacing d-none d-md-block">A</div>
+                    <ul class="nav flex-column" id="navbar-scrollspy">
+                        <li class="nav-item d-block d-sm-none">
+                            <div class="toggle-menu-container" onclick="toggleMenuCollapse(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#scrollspyHeading1">Hem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">Om mig</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapseProjects" role="button" aria-expanded="false" aria-controls="multiCollapseProjects">Projekt</a>
+                        </li>
+                        <div class="collapse" id="multiCollapseProjects">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading3">Projekt 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading3">Projekt 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading3">Projekt 3</a>
+                            </li>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading4">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-10 scroll-section" data-bs-spy="scroll" >
+                    <div class="row full-section" id="scrollspyHeading1" style="background-color: #b3e0ff;">
+                        <div class="col">
+                            <div class="row">
+                                <div class="space-grotesk-author text-center">Andreas Lindstén</div>
+                            </div> 
+                            <div class="row varela-round-regular">
+                                <div class="col align-self-center text-center">
+                                    Fullstack (MEAN-stack)
+                                </div>
+                                <div class="col align-self-start text-center">
+                                    C#.Net utvecklare
+                                </div>
+                                <div class="col align-self-end text-center">
+                                    Embedded
+                                </div>
+                            </div>
+                        <div class="row">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam eius autem nulla sint corporis, consectetur enim, recusandae veniam alias suscipit molestias assumenda! Molestias consequuntur exercitationem necessitatibus suscipit fuga unde sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Molestiae, quas. Quisquam, quod. Molestiae, quas. Quisquam, quod. Molestiae, quas. Quisquam, quod. Molestiae, quas. Quisquam, quod. Molestiae, quas.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row full-section varela-round-regular center-content" id="scrollspyHeading2" style="background-color: #cce6ff;">Om mig</div>
+                    <div class="row full-section varela-round-regular center-content" id="scrollspyHeading3" style="background-color: #e6f7ff;">Projekt</div>
+                    <div class="row full-section varela-round-regular center-content" id="scrollspyHeading4" style="background-color: #d0f0fd;">Kontakt</div>
+                    <!-- <div class="row full-section" id="scrollspyHeading5" style="background-color: #aeefff;">e</div> -->
+                </div>
             </div>
         </div>
-    </header>
-    <main>
-    </main>
-    <footer>
-    </footer>
+    </div>
 </body>
 </html>
+
+
+
+
+<!-- Save these colors for later
+                <div class="container-fluid overflow-hidden vh-100 w-100 d-flex" style="background-color: rgb(218, 241, 241);">
+                    <div class="vh-100 w-100" style="background-color: #b3e0ff;">
+                        <div id="space-grotesk-author">Andreas Lindstén</div>
+                    </div>
+                    <div class="vh-100 w-100" style="background-color: #cce6ff;">b</div>
+                    <div class="vh-100 w-100" style="background-color: #e6f7ff;">c</div>
+                    <div class="vh-100 w-100" style="background-color: #d0f0fd;">d</div>
+                    <div class="vh-100 w-100" style="background-color: #aeefff;">e</div>
+                </div>
+-->
