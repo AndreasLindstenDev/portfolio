@@ -38,13 +38,20 @@
     visibility: hidden;
 }
 
-.full-section {
+.scroll-item-full-height {
     height: 100vh;
     display: flex;
     /*
     align-items: center;
     justify-content: center;
     */
+}
+
+.sticky-nav-bar-top {
+  position: sticky;
+  top: 0; /* Sticks to the top of its scroll container */
+  background: white; /* (Optional) ensures background doesn't show content underneath */
+  z-index: 10; /* (Optional) keeps it above the second column if overlapping happens */
 }
 
 .center-content {
@@ -76,13 +83,16 @@
 }
 
 /* Optional: add scroll snapping for smooth paging */
+/*
 html {
     scroll-snap-type: y mandatory;
 }
-
+*/
+/*
 .full-section {
     scroll-snap-align: start;
 }
+*/
 
 /* W3Schools menu symbol */
 .bar1, .bar2, .bar3 {

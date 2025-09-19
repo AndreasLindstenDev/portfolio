@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sticky Column Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Only apply sticky behavior on small screens */
+    @media (max-width: 768px) {
+      .first-column {
+        position: sticky;
+        top: 0;
+        background: white; /* so text doesn't overlap when scrolling */
+        z-index: 10; /* keeps it above the other column */
+        border-bottom: 1px solid #ccc; /* just to visually separate it */
+        padding: 1rem;
+      }
+    }
+
+    /* Make second column scrollable */
+    .second-column {
+      max-height: 100vh;
+      overflow-y: scroll;
+      padding: 1rem;
+      background: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- First Column (Sticky) -->
+    <div class="col-12 col-md-4 first-column">
+      <h4>Sticky Header</h4>
+      <p>This column stays at the top on small screens.</p>
+    </div>
+
+    <!-- Second Column (Scrollable) -->
+    <div class="col-12 col-md-8 second-column">
+      <h4>Scrollable Content</h4>
+      <p>Scroll down to see the first column stay in place.</p>
+      <!-- Dummy content to make scrolling visible -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Phasellus lacinia, urna sed faucibus bibendum, lorem nunc rutrum erat...</p>
+      <p>Ut tristique metus nec risus varius, ac blandit mauris porttitor.</p>
+      <p>Curabitur commodo eros at libero tincidunt, a interdum sapien mattis.</p>
+      <p>Sed sit amet risus ultricies, tincidunt est at, porta libero.</p>
+      <p>Aliquam erat volutpat. Mauris egestas augue in velit vehicula porta.</p>
+      <p>Vestibulum fermentum mi vitae metus congue, a euismod nunc rhoncus.</p>
+      <p>Donec varius nisl in lacus feugiat sagittis.</p>
+      <p>Sed nec leo ac nulla dapibus aliquam.</p>
+      <p>Etiam elementum erat id mauris tincidunt sagittis.</p>
+      <p>Proin luctus quam sed neque dignissim, sit amet tristique urna semper.</p>
+      <p>Mauris at eros nec lorem vulputate bibendum.</p>
+      <p>Vivamus porta nulla vel lacus interdum bibendum.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

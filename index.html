@@ -23,55 +23,65 @@
     <div style="height: 100vh; background-color: antiquewhite;">
         <div class="container" style="background-color: rgb(218, 241, 241);">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-12 col-md-2 sticky-nav-bar-top">
                     <div class="space-grotesk-author-spacing d-none d-md-block">A</div>
-                    <ul class="nav flex-column" id="navbar-scrollspy">
+                    <ul class="nav flex-column">
                         <li class="nav-item d-block d-sm-none">
-                            <div class="toggle-menu-container" onclick="toggleMenuCollapse(this)">
+                            <div class="toggle-menu-container" onclick="toggleMenuCollapse(this)" data-bs-toggle="collapse" href="#collapseWholeNav" role="button" aria-expanded="false" aria-controls="collapseWholeNav">
                                 <div class="bar1"></div>
                                 <div class="bar2"></div>
                                 <div class="bar3"></div>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#scrollspyHeading1">Hem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading2">Om mig</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapseProjects" role="button" aria-expanded="false" aria-controls="multiCollapseProjects">Projekt</a>
-                        </li>
-                        <div class="collapse" id="multiCollapseProjects">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading3">Projekt 1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading3">Projekt 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading3">Projekt 3</a>
-                            </li>
-                        </div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading4">Kontakt</a>
+                        <li class="nav-item collapse d-md-block" id="collapseWholeNav">
+                            <ul class="nav flex-column" id="navbar-scrollspy">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#scrollspyHeading1">Hem</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#scrollspyHeading2">Om mig</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapseProjects" role="button" aria-expanded="false" aria-controls="multiCollapseProjects">Projekt</a>
+                                </li>
+                                <div class="collapse" id="multiCollapseProjects">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#scrollspyHeading3">Projekt 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#scrollspyHeading3">Projekt 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#scrollspyHeading3">Projekt 3</a>
+                                    </li>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#scrollspyHeading4">Kontakt</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-10 scroll-section" data-bs-spy="scroll" >
-                    <div class="row full-section" id="scrollspyHeading1" style="background-color: #b3e0ff;">
+                <div class="col-12 col-md-10 scroll-section" data-bs-spy="scroll" >
+                    <div class="row scroll-item-full-height" id="scrollspyHeading1" style="background-color: #b3e0ff;">
                         <div class="col">
+                            <div class="row d-block d-md-none mb-2">
+                                <div class="col">
+                                    <div class="p-3">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="space-grotesk-author text-center">Andreas Lindstén</div>
                             </div> 
                             <div class="row varela-round-regular">
-                                <div class="col align-self-center text-center">
+                                <div class="col align-self-start text-center">
                                     Fullstack (MEAN-stack)
                                 </div>
                                 <div class="col align-self-start text-center">
                                     C#.Net utvecklare
                                 </div>
-                                <div class="col align-self-end text-center">
+                                <div class="col align-self-start text-center">
                                     Embedded
                                 </div>
                             </div>
@@ -80,10 +90,9 @@
                         </div>
                         </div>
                     </div>
-                    <div class="row full-section varela-round-regular center-content" id="scrollspyHeading2" style="background-color: #cce6ff;">Om mig</div>
-                    <div class="row full-section varela-round-regular center-content" id="scrollspyHeading3" style="background-color: #e6f7ff;">Projekt</div>
-                    <div class="row full-section varela-round-regular center-content" id="scrollspyHeading4" style="background-color: #d0f0fd;">Kontakt</div>
-                    <!-- <div class="row full-section" id="scrollspyHeading5" style="background-color: #aeefff;">e</div> -->
+                    <div class="row scroll-item-full-height varela-round-regular center-content" id="scrollspyHeading2" style="background-color: #cce6ff;">Om mig</div>
+                    <div class="row scroll-item-full-height varela-round-regular center-content" id="scrollspyHeading3" style="background-color: #e6f7ff;">Projekt</div>
+                    <div class="row scroll-item-full-height varela-round-regular center-content" id="scrollspyHeading4" style="background-color: #d0f0fd;">Kontakt</div>
                 </div>
             </div>
         </div>
